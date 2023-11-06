@@ -122,8 +122,8 @@ public:
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("server.muzeze.com", "server.muzeze.com", true));
        // vSeeds.push_back(CDNSSeedData("thrasher.io", "dnsseed.thrasher.io", true));
-       // vSeeds.push_back(CDNSSeedData("litecointools.com", "dnsseed.litecointools.com"));
-       // vSeeds.push_back(CDNSSeedData("litecoinpool.org", "dnsseed.litecoinpool.org"));
+       // vSeeds.push_back(CDNSSeedData("newtumcointools.com", "dnsseed.newtumcointools.com"));
+       // vSeeds.push_back(CDNSSeedData("newtumcoinpool.org", "dnsseed.newtumcoinpool.org"));
        // vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,53);
@@ -226,7 +226,7 @@ public:
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
         vSeeds.push_back(CDNSSeedData("server.muzeze.com", "server.muzeze.com"));
-        //vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.litecoin.loshan.co.uk", true));
+        //vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.newtumcoin.loshan.co.uk", true));
         //vSeeds.push_back(CDNSSeedData("thrasher.io", "dnsseed-testnet.thrasher.io", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
@@ -303,7 +303,7 @@ public:
 
         genesis = CreateGenesisBlock(1698896958, 0, 0x207fffff, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x4acacbd47a670d2533233c53135b87aee51319c4acb15c9efc3ec6762ae24d6d"));
+        assert(consensus.hashGenesisBlock == uint256S("0x34332016a37e0ca2687af7ff7e10d48e853a5fca070599de67128b345ed8122d"));
         assert(genesis.hashMerkleRoot == uint256S("0x6d4dc62f739342f41816db24439625a882b3d2a15b8857037b4e7fc34e8c3355"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
